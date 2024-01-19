@@ -8,18 +8,21 @@ body {
 }
 
 header {
-    background-color: #8fce00; /* Vibrant header color */
+    background-color: #4d3c7c; /* Vibrant header color */
     text-align: center;
     padding: 20px;
     color: #fff; /* Header text color */
     font-size: 36px;
     font-weight: bold;
+    border-radius: 10px;
+    
 }
 
 nav {
-    background-color: #990000; /* Navigation bar color */
+    background-color: #f00e52; /* Navigation bar color */
     padding: 10px;
     text-align: center;
+    border-radius: 30px;
 }
 
 nav a {
