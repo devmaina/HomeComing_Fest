@@ -1,77 +1,146 @@
 body {
-    background-color: #d9ead3; /* Vibrant background color */
-    font-family: 'Arial', sans-serif; /* Thick and vibrant font */
-    color: #20124d; /* Text color */
+    background-color: #d9ead3;
+    font-family: 'Poppins', sans-serif;
+    color: #20124d;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
 header {
-    background-color: #4d3c7c; /* Vibrant header color */
+    background-color: #4d3c7c;
     text-align: center;
-    padding: 20px;
-    color: #fff; /* Header text color */
-    font-size: 36px;
+    padding: 2em;
+    color: #fff; 
     font-weight: bold;
-    border-radius: 10px;
-    
+    border-radius: 1em;
 }
 
 nav {
-    background-color: #f00e52; /* Navigation bar color */
-    padding: 10px;
-    text-align: center;
-    border-radius: 30px;
+    margin-top: 1em; 
+    padding: 1em;  
+
+    justify-content: center;
+    margin: 1em;
+    border-radius: 1em;
+    
+    display: flex;
+    flex-direction: row;
 }
 
 nav a {
-    color: #fff; /* Navigation text color */
+    color: #fff;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
+    margin: 0.5em;
+    font-size: 1em;
+    width: fit-content;
     background-color: #f44336;
-     border-radius: 10px;
-     padding: 20px;
-    
+    border-radius: 1em;
+    padding: 1em;
 }
+
+
 
 .container {
     width: 80%;
     margin: auto;
-    padding: 20px;
+    padding: 2em;
 }
 
 .activities {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 2em;
 }
 
 .activity-card {
-    background-color: #6fa8dc; /* Activity card background color */ 
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    width: 30%;
+    background-color: #6fa8dc;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+    width: 100%; /* Make activity cards full-width on smaller screens */
 }
 
 .activity-card h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #4d3c7c; 
 }
 
 footer {
-    background-color: #e06666; /* Footer color */
+    background-color: #e06666;
     color: #f4cccc;
     text-align: center;
-    padding: 10px; 
+    padding: 1em;
     bottom: 0;
     width: 100%;
 }
-.logo {
-margin:20px;
-width: 300px;
+
+.logo { 
+    width: 20%; /* Adjust width with percentage */
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    
+
+    .activity-card {
+        width: 100%;
     }
+    body {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+ 
+    header {
+        padding: 1em; /* Adjust padding with em */
+        font-size: 1em; /* Adjust font size with em */
+    }
+
+    nav { 
+        display: flex;
+        flex-wrap: wrap; 
+        align-content: center;
+        flex-direction: column; 
+    }
+
+    nav a { 
+        width: 50vw;      
+        font-size: 0.8em; 
+    text-decoration: none;
+    margin: 0.2em;
+    font-size: 0.8em;    
+
+    }
+    main {
+        margin: 9px;
+    }
+    
+    .container {
+        padding: 1em;
+    }
+
+    .activities {
+        margin-top: 1em;
+    }
+
+    .activity-card {
+        padding: 1em;
+        margin: 0.3em;
+    }
+
+    .activity-card h2 {
+        font-size: 1.2em; /* Adjust font size with em */
+        margin-bottom: 0.5em; 
+        color: #f44336;
+    }
+
+    footer {
+        padding: 1em;
+    }
+
+    .logo {
+        margin: 1em;
+        width: 80%; /* Adjust width with percentage */
+    }
+}
