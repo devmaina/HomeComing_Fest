@@ -1,0 +1,74 @@
+body {
+    background-color: #d9ead3; /* Vibrant background color */
+    font-family: 'Arial', sans-serif; /* Thick and vibrant font */
+    color: #20124d; /* Text color */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #8fce00; /* Vibrant header color */
+    text-align: center;
+    padding: 20px;
+    color: #fff; /* Header text color */
+    font-size: 36px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #990000; /* Navigation bar color */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff; /* Navigation text color */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    background-color: #f44336;
+     border-radius: 10px;
+     padding: 20px;
+    
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.activity-card {
+    background-color: #6fa8dc; /* Activity card background color */ 
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+}
+
+.activity-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+footer {
+    background-color: #e06666; /* Footer color */
+    color: #f4cccc;
+    text-align: center;
+    padding: 10px; 
+    bottom: 0;
+    width: 100%;
+}
+.logo {
+margin:20px;
+width: 300px;
+    }
